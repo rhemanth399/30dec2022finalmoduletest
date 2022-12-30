@@ -1,0 +1,237 @@
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar content */
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+/* Navbar company name */
+.navbar-company-name {
+  font-weight: 700;
+  margin: 0;
+  text-decoration: none;
+  color:hotpink;
+  font-size:20px;
+}
+
+/* Navbar links */
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  margin: 10px;
+}
+
+/* Navbar link */
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin: 0 0.5rem;
+}
+
+/* Mobile view (viewport width less than or equal to 800px) */
+@media (max-width: 800px) {
+  /* Navbar content */
+  .navbar-content {
+    flex-direction: column;
+     /* This sets the main axis to be the vertical axis */
+    height: auto;
+    }
+  /* Navbar links */
+  .nav-links {
+    display: flex;
+    flex-direction: column; /* This sets the main axis to be the vertical axis */
+  }
+  .nav-item {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Biggest heading */
+.about-content{
+  margin-top: 200px;
+}
+.about-content img{
+  width:100%;
+}
+
+.biggest-heading {
+  text-align: center;
+  font-size: 3rem;
+  
+  font-weight: 700;
+  margin: 3rem 0;
+  animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/* */
+.landing-page {
+  display: flex;
+  flex-direction: column; /* This sets the main axis to be the vertical axis */
+  align-items: center; /* This aligns the items along the main axis */
+}
+
+
+
+/* Down arrow */
+.down-arrow {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.down-arrow a {
+  color: black;
+  font-size: 2rem;
+  transition: color 0.3s;
+}
+
+.down-arrow a:hover {
+  color: #0077c9;
+}
+
+/* About us section */
+#about-us {
+  padding: 4rem 0;
+}
+
+.about-us-content {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-us-image {
+  width: 40%;
+  margin-right: 2rem;
+}
+
+
+@media (max-width: 800px) {
+  .about-us-image {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+}
+
+.about-us-text {
+  width: 60%;
+}
+
+/* Our services section */
+#our-services {
+  padding: 4rem 0;
+  overflow-x: auto;
+}
+
+.services-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  width: 25%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.service-card:hover {
+  background-color: black;
+  color: white;
+}
+
+
+/* Contact us form */
+#contact-us {
+  padding: 4rem 0;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+
+
+.form-group input,
+ {
+  width: 100%;
+  padding: 0.5rem;
+ 
+ }
+
+ /* Mobile view (viewport width less than or equal to 800px) */
+@media (max-width: 800px) {
+  /* Biggest heading */
+  .biggest-heading {
+    font-size: 2.5rem;
+    
+  }
+
+  /* Down arrow */
+  .down-arrow a {
+    font-size: 1.5rem;
+  }
+
+  /* About us section */
+  .about-us-image {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+
+  /* Our services section */
+  .service-card {
+    width: 45%;
+  }
+}
+
+/* Tablet view (viewport width between 800px and 1200px) */
+@media (min-width: 800px) and (max-width: 1200px) {
+  /* Our services section */
+  .service-card {
+    width: 30%;
+  }
+}
+
+
+/* Mobile view (viewport width less than or equal to 800px) */
+@media (max-width: 800px) {
+  /* About us section */
+  .about-us-content {
+    flex-direction: column; /* This sets the main axis to be the vertical axis */
+  }
+}

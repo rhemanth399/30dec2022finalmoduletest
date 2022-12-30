@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Landing page -->
+    <div class="landing-page">
+        <nav class="navbar">
+            <div class="navbar-content">
+                <a href="#" class="navbar-company-name">Company Name</a>
+                <ul class="nav-links">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-us" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#our-services" class="nav-link">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-us" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Biggest heading -->
+        <section id="ab">
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h1 class="biggest-heading">Welcome to our website</h1>
+                </div>
+                <img src="firstimage.jfif" class="biggest-image" alt="image">
+
+            </div>
+        </section>
+        <!-- Down arrow -->
+        <div class="down-arrow">
+            <a href="#our-services"><i class="fas fa-arrow-down"></i></a>
+        </div>
+        <!-- About us section -->
+        <section id="about-us">
+            <div class="about-us-content">
+                <img src="companyimage.jfif" alt="About us" class="about-us-image">
+                <div class="about-us-text">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at cursus magna. Sed lacinia
+                        purus eget dictum sollicitudin. Aliquam dignissim, diam id ultricies luctus, lectus velit tempus
+                        purus, eu egestas dui dui nec dui. Sed luctus aliquam urna, et porta lectus viverra in. Nunc
+                        viverra dolor in arcu pretium, id porttitor justo malesuada. Vestibulum vel varius velit, eu
+                        consectetur leo. Aenean dictum neque massa, non pharetra felis tristique nec. Nunc porta aliquet
+                        volutpat. Quisque id volutpat nisl. Nunc lobortis, massa non faucibus posuere, purus quam
+                        porttitor nisi, id viverra magna massa non diam. Sed sollicitudin magna a sollicitudin ornare.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Our services section -->
+        <section id="our-services">
+            <h2>Our Services</h2>
+            <div class="services-content">
+                <div class="service-card">
+                    <h3>Service 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at cursus magna.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Service 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at cursus magna.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Service 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at cursus magna.</p>
+                </div>
+            </div>
+        </section>
+        <!-- footer part-->
+        <!-- Contact us form -->
+        <section id="contact-us">
+            <h2>Contact Us</h2>
+            <form>
+                <!-- Name -->
+                <div class="form-group">
+
+                    <input type="text" id="name" placeholder="Enter your name" value="">
+                </div>
+                <!-- Email -->
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Enter your email" value="">
+                </div>
+                <!-- phone number -->
+                <div class="form-group">
+
+                    <input type="number" id="number" placeholder="Enter your number" value="">
+                </div>
+                <div class="form-group">
+                    <!-- Submit button -->
+                    <input type="button" id="submit-button" value="Submit" onclick=" submitForm()">
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
