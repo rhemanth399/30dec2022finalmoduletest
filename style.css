@@ -57,6 +57,11 @@
     margin: 0.5rem 0;
   }
 }
+.main{
+  background-color: black;
+}
+
+
 
 /* Biggest heading */
 .about-content{
@@ -69,7 +74,7 @@
 .biggest-heading {
   text-align: center;
   font-size: 3rem;
-  
+  color:white;
   font-weight: 700;
   margin: 3rem 0;
   animation: fadeIn 2s;
@@ -98,10 +103,11 @@
 .down-arrow {
   text-align: center;
   margin: 1rem 0;
+  color:white;
 }
 
 .down-arrow a {
-  color: black;
+  color: white;
   font-size: 2rem;
   transition: color 0.3s;
 }
@@ -184,7 +190,14 @@ form {
   flex-direction: column;
   margin-bottom: 1.5rem;
 }
-
+.footer{
+  background-color: black;
+  width:100%;
+}
+.footer h2{
+  color:white;
+  text-align: center;
+}
 
 
 .form-group input,
